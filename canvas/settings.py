@@ -154,8 +154,8 @@ REST_FRAMEWORK = {
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
-            'client_id': '940379684481-olvr66mhnp27t2lt3eeq8kk4jtr41iur.apps.googleusercontent.com',
-            'secret': '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',
+            'client_id': os.environ.get('GOOGLE_CLIENT_ID'),
+            'secret': os.environ.get('GOOGLE_SECRET'),
             'key': '',
         }
     }
